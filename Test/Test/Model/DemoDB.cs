@@ -14,9 +14,9 @@ namespace Test
     {
         public static List<Employee> loadData()
         {
-            if (File.Exists(@"C:\Users\shoshanaa\Downloads\Test\Test\json1.json"))
+            if (File.Exists(@"..\..\..\json1.json"))
             {
-                String JSON = File.ReadAllText(@"C:\Users\shoshanaa\Downloads\Test\Test\json1.json");
+                String JSON = File.ReadAllText(@"..\..\..\json1.json");
                 List<Employee> model = JsonConvert.DeserializeObject<List<Employee>>(JSON);
                 return model;
                 
